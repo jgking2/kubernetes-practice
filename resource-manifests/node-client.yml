@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-client
+  labels:
+    app: node-client
+spec:
+  containers:
+    - image: jgking2/node-web-app
+      name: node-client
+      ports:
+        - containerPort: 8080
